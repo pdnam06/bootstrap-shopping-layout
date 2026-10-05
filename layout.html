@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Online shopping mall — Bootstrap Layout</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="poly.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" defer></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+<div class="container">
+<header class="row" id="home"><div class="shopping-mall"><h1>Online shopping mall</h1><h5>The center point of the professional programming</h5></div><img class="pull-right header-image" src="images/header-object.svg" alt="Minh họa máy tính xách tay và điện thoại" width="440" height="210"></header>
+<nav class="navbar navbar-inverse" aria-label="Điều hướng chính"><div class="container-fluid"><div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#shopNavbar" aria-expanded="false" aria-controls="shopNavbar"><span class="sr-only">Mở hoặc đóng menu</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand visible-xs" href="#home">Shopping Mall</a></div><div class="collapse navbar-collapse" id="shopNavbar"><ul class="nav navbar-nav">
+<li class="active"><a href="#home"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Trang chủ</a></li><li><a href="#about"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Giới thiệu</a></li><li><a href="#contact"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Liên hệ</a></li><li><a href="#feedback"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Góp ý</a></li><li><a href="#faq"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Hỏi đáp</a></li><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Tài khoản <span class="caret"></span></a><ul class="dropdown-menu"><li><a href="#account">Thông tin tài khoản</a></li></ul></li>
+</ul></div></div></nav>
+<div class="row"><article class="col-sm-9" aria-label="Danh sách sản phẩm"><h2 class="section-title">Sản phẩm nổi bật</h2><div class="row" id="products">
+<div class="col-sm-4 poly-prod" data-category="phone"><div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title">Nokia</h3></div><div class="panel-body"><img src="images/phone.svg" alt="Minh họa Nokia" width="300" height="200"></div><div class="panel-footer">$ 100.25</div></div></div>
+<div class="col-sm-4 poly-prod" data-category="laptop"><div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title">Laptop</h3></div><div class="panel-body"><img src="images/laptop.svg" alt="Minh họa Laptop" width="300" height="200"></div><div class="panel-footer">$ 650.00</div></div></div>
+<div class="col-sm-4 poly-prod" data-category="desktop"><div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title">Máy tính để bàn</h3></div><div class="panel-body"><img src="images/desktop.svg" alt="Minh họa Máy tính để bàn" width="300" height="200"></div><div class="panel-footer">$ 520.00</div></div></div>
+<div class="col-sm-4 poly-prod" data-category="fan"><div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title">Quạt máy</h3></div><div class="panel-body"><img src="images/fan.svg" alt="Minh họa Quạt máy" width="300" height="200"></div><div class="panel-footer">$ 35.50</div></div></div>
+<div class="col-sm-4 poly-prod" data-category="tv"><div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title">Tivi</h3></div><div class="panel-body"><img src="images/tv.svg" alt="Minh họa Tivi" width="300" height="200"></div><div class="panel-footer">$ 399.00</div></div></div>
+<div class="col-sm-4 poly-prod" data-category="fridge"><div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title">Tủ lạnh</h3></div><div class="panel-body"><img src="images/fridge.svg" alt="Minh họa Tủ lạnh" width="300" height="200"></div><div class="panel-footer">$ 480.00</div></div></div>
+</div><p id="empty-message" class="alert alert-info" hidden>Không có sản phẩm phù hợp.</p>
+<div class="panel panel-default" id="about"><div class="panel-heading"><h2 class="panel-title">Giới thiệu</h2></div><div class="panel-body">Online shopping mall là trang cửa hàng minh họa cho bài thực hành bố cục Bootstrap.</div></div>
+<div class="panel panel-default" id="faq"><div class="panel-heading"><h2 class="panel-title">Hỏi đáp</h2></div><div class="panel-body">Nhập từ khóa hoặc chọn danh mục bên phải để lọc sản phẩm. Đây là giao diện thực hành, chưa hỗ trợ đặt hàng.</div></div>
+<div class="panel panel-default" id="account"><div class="panel-heading"><h2 class="panel-title">Thông tin tài khoản</h2></div><div class="panel-body">Khu vực minh họa tài khoản, chưa kết nối hệ thống đăng nhập.</div></div>
+</article>
+<aside class="col-sm-3" aria-label="Giỏ hàng và danh mục">
+<div class="poly-cart" id="cart"><div class="panel panel-default"><div class="panel-heading"><strong>Giỏ hàng</strong></div><div class="panel-body"><div class="row"><img class="col-sm-5 col-xs-5" src="images/shoppingcart.svg" alt="Biểu tượng giỏ hàng"><ul class="col-sm-7 col-xs-7"><li>100 items</li><li>$56.8</li><li><a href="#cart-details">Xem giỏ hàng</a></li></ul></div></div><div class="panel-footer" id="cart-details">Số liệu giỏ hàng minh họa theo đề bài.</div></div></div>
+<div class="panel panel-default"><div class="panel-body"><form id="search-form" role="search"><label class="sr-only" for="keywords">Tìm sản phẩm</label><input id="keywords" name="q" type="search" placeholder="Keywords" class="form-control"></form></div></div>
+<div class="panel panel-default"><div class="panel-heading"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> <strong>Chủng Loại</strong></div><div class="list-group" id="categories"><a href="#products" class="list-group-item active" data-category="all">Tất cả sản phẩm</a><a href="#products" class="list-group-item" data-category="phone">Điện thoại di động</a><a href="#products" class="list-group-item" data-category="laptop">Máy tính xách tay</a><a href="#products" class="list-group-item" data-category="desktop">Máy tính để bàn</a><a href="#products" class="list-group-item" data-category="fan">Quạt máy</a><a href="#products" class="list-group-item" data-category="tv">Tivi</a><a href="#products" class="list-group-item" data-category="fridge">Tủ lạnh</a></div></div>
+</aside></div>
+<div class="panel panel-default" id="contact"><div class="panel-heading"><h2 class="panel-title">Liên hệ &amp; Góp ý</h2></div><div class="panel-body" id="feedback">Cảm ơn bạn đã ghé thăm trang minh họa Online shopping mall.</div></div>
+<footer class="panel panel-default"><div class="panel-heading text-center"><p>CodeGym &copy; 2017</p></div></footer>
+</div></body></html>

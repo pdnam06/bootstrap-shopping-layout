@@ -1,0 +1,15 @@
+body { background: #f7f9fc; }
+header { position: relative; min-height: 230px; }
+.shopping-mall { position: absolute; bottom: 20px; left: 15px; font-variant: small-caps; z-index: 1; }
+.shopping-mall > h1 { font-family: Impact, Arial, sans-serif; font-size: 50px; color: white; letter-spacing: .3px; text-shadow: 0 0 2px black; padding-bottom: 0; border-bottom: 1px dotted gray; margin: 0; }
+.shopping-mall > h5 { margin-top: 5px; letter-spacing: .5px; }
+.header-image { max-width: 45%; height: auto; margin-top: 10px; }
+.section-title { margin: 5px 0 15px; font-size: 22px; }
+.poly-cart { margin-top: 5px; }
+.poly-cart ul { padding: 0; margin: 0; list-style: none; font-variant: small-caps; }
+.poly-cart .panel-heading strong { font-variant: small-caps; font-size: larger; text-shadow: 0 0 2px darkgray; }
+.poly-prod { text-align: center; padding: 5px; }
+.poly-prod .panel-body img { height: 150px; max-width: 95%; object-fit: contain; }
+.poly-prod .panel-footer { font-weight: bold; }
+footer p { margin: 0; }
+@media (max-width: 767px) { header { display: flex; flex-direction: column; min-height: 0; padding: 20px 15px; } .shopping-mall { position: static; } .shopping-mall > h1 { font-size: 36px; } .header-image { align-self: center; max-width: 100%; width: 320px; } }
